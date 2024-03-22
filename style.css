@@ -1,0 +1,42 @@
+.board-container {
+    display: inline-block; /* Display boards side by side */
+    margin-right: 20px; /* Add spacing between boards */
+}
+
+#grid,
+#computer-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+    background-color: #444;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border: 1px solid #666;
+}
+
+.ship {
+    background-color: #0099ff;
+}
+
+.hit {
+    background-color: #ff3300;
+}
+
+.miss {
+    background-color: #99cc00;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0099ff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
